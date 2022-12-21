@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pesquisa de Satisfação Apple</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="gradiente">
+  <h1>Pesquisa de Satisfação Apple</h1>
+  <h2>MacBook Pro 2021</h2>
+  <h4>Agora que você possui o MacBook Pro 2021, que tal nos contar o que esta achando dele?</h4>
+
+  <form id="formulario">
+    <div id="questao1">
+      <p>Como você avalia o seu MacBook Pro em relação a...?</p>
+      <table class= table1>
+        <tr>
+          <th>&nbsp;</th>
+          <th><label for= "excelente">Excelente</label></th>
+          <th><label for="otimo">Ótimo</label></th>
+          <th><label for="bom">Bom</label></th>
+          <th><label for="regular">Regular</label></th>
+          <th><label for="ruim">Ruim</label></th>
+        </tr>
+        <tr>
+          <td class = q1 for="tamanho">Tamanho:</td>
+          <td><input type="radio" id=tamanho name="item1" value="excelente"></td>
+          <td><input type="radio" id=tamanho name="item1" value="otimo"></td>
+          <td><input type="radio" id=tamanho name="item1" value="bom"></td>
+          <td><input type="radio" id=tamanho name="item1" value="regular"></td>
+          <td><input type="radio" id=tamanho name="item1" value="ruim"></td>
+        </tr>
+        <tr>
+          <td class = q1 for="peso">Peso:</td>
+          <td><input type="radio" id=peso name="item2" value="excelente"></td>
+          <td><input type="radio" id=peso name="item2" value="otimo"></td>
+          <td><input type="radio" id=peso name="item2" value="bom"></td>
+          <td><input type="radio" id=peso name="item2" value="regular"></td>
+          <td><input type="radio" id=peso name="item2" value="ruim"></td>
+        </tr>
+        <tr>
+          <td class = q1 for="tela">Tamanho de Tela:</td>
+          <td><input type="radio" id=tela name="item3" value="excelente"></td>
+          <td><input type="radio" id=tela name="item3" value="otimo"></td>
+          <td><input type="radio" id=tela name="item3" value="bom"></td>
+          <td><input type="radio" id=tela name="item3" value="regular"></td>
+          <td><input type="radio" id=tela name="item3" value="ruim"></td>
+        </tr>
+        <tr>
+          <td class = q1 for="bateria">Bateria:</td>
+          <td><input type="radio" id=bateria name="item4" value="excelente"></td>
+          <td><input type="radio" id=bateria name="item4" value="otimo"></td>
+          <td><input type="radio" id=bateria name="item4" value="bom"></td>
+          <td><input type="radio" id=bateria name="item4" value="regular"></td>
+          <td><input type="radio" id=bateria name="item4" value="ruim"></td>
+        </tr>
+        <tr>
+          <td class = q1 for="armazenamento">Armazenamento:</td>
+          <td><input type="radio" id=armazenamento name="item5" value="excelente"></td>
+          <td><input type="radio" id=armazenamento name="item5" value="otimo"></td>
+          <td><input type="radio" id=armazenamento name="item5" value="bom"></td>
+          <td><input type="radio" id=armazenamento name="item5" value="regular"></td>
+          <td><input type="radio" id=armazenamento name="item5" value="ruim"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="questao2">
+      <p>Como você avalia os seguintes itens:</p>
+      <table class= table2>
+        <tr>
+          <td><label for="imagem">Imagem:</label></td>
+          <td><input type="range" id="imagem" name="item6" value="0" min="0" max="10"     
+                onChange="rangeSlide('rangeValue1', this.value)"
+                onmousemove="rangeSlide(this.value)"></td>
+          <td><span id="rangeValue1">0</span></td>
+        </tr>
+        <tr>
+          <td><label for="teclado">Teclado:</label></td>
+          <td><input type="range" id="teclado" name="item7" value="0" min="0" max="10"
+                onChange="rangeSlide('rangeValue2', this.value)" 
+                onmousemove="rangeSlide(this.value)"></td>
+          <td><span id="rangeValue2">0</span></td>
+        </tr>
+        <tr>
+          <td><label for="mouse">Mouse:</label></td>
+          <td><input type="range" id="mouse" name="item8" value="0" min="0" max="10"
+              onChange="rangeSlide('rangeValue3', this.value)" 
+              onmousemove="rangeSlide(this.value)"></td>
+          <td><span id="rangeValue3">0</span></td>
+        </tr>
+        <tr>
+          <td><label for="audio">Áudio:</label></td>
+          <td><input type="range" id="audio" name="item9" value="0" min="0" max="10"
+                onChange="rangeSlide('rangeValue4', this.value)"
+                onmousemove="rangeSlide(this.value)"></td>
+          <td><span id="rangeValue4">0</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="questao3">
+      <p>Sobre o desempenho, quais itens você considera mais importante para seu MacBook Pro?</p>
+      <table class= table3>
+        <tr>
+          <td><input type="checkbox" id="jogos" name="item10" value="jogos">
+            <label for="jogos">Bom desempenho em jogos</label></td>
+          <td><input type="checkbox" id="velocidade" name="item10" value="velocidade">
+            <label for="velocidade">Alta velocidade na execução de tarefas</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="resposta" name="item10" value="resposta">
+            <label for="resposta">Alta capacidade de resposta</label></td>
+          <td><input type="checkbox" id="seguranca" name="item10" value="seguranca">
+            <label for="seguranca">Segurança</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="duravel" name="item10" value="duravel">
+            <label for="duravel">Bateria com boa duração</label></td>
+          <td><input type="checkbox" id="memoria" name="item10" value="memoria">
+            <label for="memoria">Bom espaço de memória</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" id="preco" name="item10" value="preco">
+            <label for="preco">Bom custo x benefício</label></td>
+          <td><input type="checkbox" id="acessorios" name="item10" value="acessorios">
+            <label for="acessorios">Variedade de acessórios</label></td>
+        </tr>
+      </table>
+    </div>
+    
+    <div id="questao4">
+      <p>Tem algo mais para nos contar? Deixe sua mensagem!</p>
+      <textarea id="comentario" name="item11" rows="4" cols="50"></textarea>
+      <br>
+    </div>
+
+    <div id="botoes">
+      <button type="button" onclick="validar()">Enviar</button>
+      <button type="button" onclick="limpar()">Limpar dados</button>
+    </div>
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>

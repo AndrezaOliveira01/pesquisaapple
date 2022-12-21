@@ -1,0 +1,61 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.gradiente{
+  background: linear-gradient(45deg, #FCD1D1, #ECE2E1, #D3E0DC, #AEE1E1);
+  background-size: 200% 200%;
+  animation: colors 30s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.3em;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 1.43em;
+}
+
+.table1{
+  margin: auto;
+  text-align: center;
+}
+
+.q1{
+  text-align: left;
+}
+
+.table2 {
+  margin: auto;
+  text-align: left;
+}
+
+.table3{
+  margin: auto;
+  text-align: left;
+}
+
+#comentario {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
